@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독서로 가입방법</title>
+
+    <style>
+        .title {
+            display: flex;
+            justify-content: center;
+            /* 가로 방향 가운데 정렬 */
+            align-items: flex-start;
+            /* 세로 방향 가운데 정렬 */
+        }
+
+        .content-section {
+            margin-bottom: 20px;
+        }
+
+        .content-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content img {
+            max-width: 200%;
+            max-height: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">독서로 가입방법</h1>
+    <div class="content-section">
+        <div class="content-header">
+            <div class="toggle-button" onclick="toggleContent(this)">&#9654;</div>
+            <h1>모바일</h1>
+        </div>
+        <div class="content">
+            <ul>
+                <h3>
+                <li><a href="https://read365.edunet.net/">이 텍스트를 클릭하면 독서로에 들어가진다.</a></li>
+                <p></p>
+                <li>그림과 같이 한다.</li>
+                <p></p>
+                <li><img src="img/mobile/home.jpg" alt=""></li>
+                <p></p>
+                <p></p>
+                <li><img src="img/mobile/login.jpg" alt=""></li>
+                <p>회원가입을 한다.</p>
+                <p></p>
+                <li><img src="img/mobile/login1.jpg" alt=""></li>
+                <p>회원가입을 한 정보로 로그인을 한다.</p>
+                <p></p>
+                <li><img src="img/mobile/mypage.jpg" alt=""></li>
+                <p></p>
+                <p></p>
+                <li><img src="img/mobile/doksae.jpg" alt=""></li>
+                <p></p>
+                <p></p>
+                <li><img src="img/mobile/DLS.jpg" alt=""></li>
+                <p></p>
+                <p></p>
+                <li><img src="img/mobile/num.jpg" alt=""></li>
+                <p>선생님 께서 주신 엑셀파일에 있는 자신의 코드를 작성하고 옆에있는 인증하기를 누른다.</p>
+                <p>이때 "DLS인증은 개인정보 수집•이용에 동의 시 완료됩니다."라고 뜬다면</p>
+                <p>밑으로 내리면 개인정보 수집 어쩌구 하면서 그 밑에 (동의함) (동의하지 않음)이 나와있는데 (동의함)을 누르고</p>
+                <p>다시 위로 올려서 인증하기를 누르면 된다.</p>
+            </h3>
+            </ul>
+        </div>
+    </div>
+    <div class="content-section">
+        <div class="content-header">
+            <div class="toggle-button" onclick="toggleContent(this)">&#9654;</div>
+            <h1>컴퓨터</h1>
+        </div>
+        <div class="content">
+            <h3>
+                <li><a href="https://read365.edunet.net/">이 텍스트를 클릭하면 독서로에 들어가진다.</a></li>
+                <p></p>
+                <li><img src="img/computer/home.png" alt=""></li>
+                <p></p>
+                <p></p>
+                <li><img src="img/computer/login.png" alt=""></li>
+                <p>회원가입을 한다.</p>
+                <p></p>
+                <li><img src="img/computer/login1.png" alt=""></li>
+                <p>회원가입을 한 정보로 로그인을 한다.</p>
+                <p></p>
+                <li><img src="img/computer/mypage.png" alt=""></li>
+                <p></p>
+                <p></p>
+                <li><img src="img/computer/DLS.png" alt=""></li>
+                <p></p>
+                <p></p>
+                <li><img src="img/computer/num.png" alt=""></li>
+                <p>선생님 께서 주신 엑셀파일에 있는 자신의 코드를 작성하고 옆에있는 인증하기를 누른다.</p>
+                <p>이때 "DLS인증은 개인정보 수집•이용에 동의 시 완료됩니다."라고 뜬다면</p>
+                <p>사진과 같이 밑에있는 동그라미 표시한 것을 클릭한다.</p>
+                <p>클릭했다면 다시 인증하기를 누르면 된다.</p>
+            </h3>
+    </div>
+    <script>
+        function toggleContent(button) {
+            var content = button.parentElement.nextElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                button.innerHTML = "&#9660;"; // 아래쪽 화살표
+            } else {
+                content.style.display = "none";
+                button.innerHTML = "&#9654;"; // 오른쪽 화살표
+            }
+        }
+    </script>
+</body>
+
+</html>
